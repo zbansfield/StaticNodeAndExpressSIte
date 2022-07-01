@@ -27,12 +27,25 @@ app.get('/about', (req, res) => {
 app.get('/project/:id', (req, res) => {
     const { id } = req.params;
 
-    const project = projects[0];
+    if (id < projects.length){
+        const project = projects[id];
+        res.render('project', { project });
+    } else {
+        res.redirect('/')
+    }
+})
 
-    res.render('project', { project })
+// Error handling
+app.use((req, res, next) => {
+    const err = new Error('Not Found')
+    err.status = 404;
+    next(err);
+});
 
-    console.log(id);
-
+app.use((err, req, res, next) => {
+    res.locals.error = err;
+    res.status(err.status); //500 general error, server couldnt fulfill request
+    res.render('error');
 })
 
 app.listen(3000, () => {
