@@ -6,18 +6,18 @@
 
 // Variables for the necessary dependencies
 const express = require('express');
-const { data } = require('data.json');
+const { projects } = require('./data.json');
 
 const app = express();
 
 // Setting middleware
 app.set('view engine', 'pug');
-app.use('static', express.static('public'))
+app.use('/static', express.static('public'))
 
 // Setting routes
 app.get('/', (req, res) => {
-    res.locals = data.projects
-    res.render('project')
+    // res.locals = projects
+    res.render('index', { projects })
 })
 
 app.get('/about', (req, res) => {
@@ -25,6 +25,13 @@ app.get('/about', (req, res) => {
 })
 
 app.get('/project/:id', (req, res) => {
+    const { id } = req.params;
+
+    const project = projects[0];
+
+    res.render('project', { project })
+
+    console.log(id);
 
 })
 
