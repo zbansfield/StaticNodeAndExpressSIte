@@ -3,7 +3,7 @@
         {
             "id": 0,
             "project_name": "Random Quote Generator",
-            "description": "This project is to create a webpage that generates a random quote every time a button is clicked.",
+            "description": "In this project, I created a webpage that generates a random quote every time a button is clicked.",
             "technologies": ["Javascript", "HTML", "CSS"],
             "live_link": "https://zbansfield.github.io/RandomQuoteGenerator.github.io/",
             "github_link": "https://github.com/zbansfield/RandomQuoteGenerator.github.io",
@@ -15,7 +15,7 @@
         {
             "id": 1,
             "project_name": "Data Pagination and Filtering",
-            "description": "This project is to create a webpage that displays a list of students with their information and separates the list into pages. Each page displays 9 students' information.",
+            "description": "In this project, I created a webpage that displays a list of students with their information and separates the list into pages. Each page displays 9 students' information.",
             "technologies": ["Javascript", "HTML", "CSS"],
             "live_link": "https://zbansfield.github.io/DataPaginationAndFiltering.github.io//",
             "github_link": "https://github.com/zbansfield/DataPaginationAndFiltering.github.io",
@@ -27,7 +27,7 @@
         {
             "id": 2,
             "project_name": "Interactive Form",
-            "description": "This project is to create a form that is engaging, interactive, and accessible to use.",
+            "description": "In this project, I created a form that is engaging, interactive, and accessible to use.",
             "technologies": ["Javascript", "HTML", "CSS"],
             "live_link": "https://zbansfield.github.io/InteractiveForm.github.io/",
             "github_link": "https://github.com/zbansfield/InteractiveForm.github.io",
@@ -40,7 +40,7 @@
         {
             "id": 3,
             "project_name": "OOP Game Show App",
-            "description": "This project is to create a word-guessing game called 'Phrase Hunter'. The player tries to guess a random phrase by selecting letters from an onscreen keyboard.",
+            "description": "In this project, I created a word-guessing game called 'Phrase Hunter'. The player tries to guess a random phrase by selecting letters from an onscreen keyboard.",
             "technologies": ["Javascript", "HTML", "CSS"],
             "live_link": "https://zbansfield.github.io/OOPGameShowApp.github.io/",
             "github_link": "https://github.com/zbansfield/OOPGameShowApp.github.io",
@@ -54,7 +54,7 @@
         {
             "id": 4,
             "project_name": "Public API Requests",
-            "description": "Creating an employee directory by requesting information from a third-party API (The Random User Generator API).",
+            "description": "In this project, I created an employee directory by requesting information from a third-party API (The Random User Generator API).",
             "technologies": ["Javascript", "HTML", "CSS"],
             "live_link": "https://zbansfield.github.io/PublicAPIRequests.github.io/",
             "github_link": "https://github.com/zbansfield/PublicAPIRequests.github.io",

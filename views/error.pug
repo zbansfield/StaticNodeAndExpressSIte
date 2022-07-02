@@ -3,8 +3,11 @@ extends layout
 block content
   section.desk
     h1= `${error.message} - Status: ${error.status}`
-    img.desk-items(src='/static/images/404error.jpg')
-    nav.nav
-      a(href='/')
-        span &larr;
-        |  Go Home
+    if error.status == 404
+      img.project-img(src='/static/images/404error.jpg')
+      nav.nav
+        a(href='/')
+          span &larr;
+          |  Go Home
+    else 
+      img.project-img(src='/static/images/500error.jpg')
