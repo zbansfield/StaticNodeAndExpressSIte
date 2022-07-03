@@ -42,8 +42,9 @@ app.get('/project/:id', (req, res) => {
 
 // 404- Page not found errors
 app.use((req, res, next) => {
-    const err = new Error('Not Found')
+    const err = new Error('Page Not Found')
     err.status = 404;
+    console.log(err.message)
     next(err);
 });
 
@@ -60,6 +61,7 @@ app.use((err, req, res, next) => {
         status: 500
     };
     res.status(err.status || 500);
+    console.log(error.message)
     res.render('error', { error });
 });
 
